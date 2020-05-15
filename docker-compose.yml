@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  discord-bot:
+    build: ./
+    container_name: discord-bot
+    restart: always
+    environment:
+      NODE_ENV: 'test'
+    volumes:
+      - type: bind
+        source: c:/bin/
+        target: /etc/l2

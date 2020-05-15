@@ -1,0 +1,38 @@
+uses SysUtils, Classes, PacketUnit;    // dont forget to put PacketUnit.txt in folder with this script
+
+procedure SaveBossStatus(txt: string);
+var
+    SL: TStringList;
+begin
+  SL:= TStringList.Create;
+  try
+      SL.Clear;
+      SL.Add(txt);
+      SL.SaveToFile('c:\bin\map_update.bin');
+  finally
+    SL.Free;
+  end;
+end;
+
+procedure OnPacket(ID1, ID2: cardinal; Data: pointer; DataSize: word);
+var
+    Pck: TNetworkPacket;
+begin
+  if (MemToHex(ID1, 1) = 'FE') and (MemToHex(ID2, 2) = 'B901') then
+   begin
+        print('bosses updated');
+        SaveBossStatus(MemToHex(Data^, DataSize));
+    end
+end;
+
+procedure OpenMap();
+begin
+  while Delay(3000) do begin
+    Engine.SendToServer('6C');
+  end;
+end;
+
+begin
+  Script.NewThread(@OpenMap);
+  Delay(-1);
+end.

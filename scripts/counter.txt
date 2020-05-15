@@ -1,0 +1,73 @@
+               uses SysUtils, Classes;
+  
+const
+  Range: integer = 5000; // radius of visibility
+
+  // List of clans
+  ClansNames: array of string = [
+    'BeMyFrag',
+    'TheWhiteOrder',
+    'Swarm',
+    'Marvel',
+    'LostSouls'
+  ];
+
+procedure ZergCounterThread();
+var
+  i, j, k: integer;
+  Ch: TL2Char;
+  SL: TStringList;
+  ZergLists: array of array of string;
+  Have: boolean;
+begin
+  SL:= TStringList.Create;
+  try
+    SetLength(ZergLists, Length(ClansNames)); 
+    for i:= 0 to Length(ZergLists)-1 do
+      SetLength(ZergLists[i], 0);
+      
+    while Delay(1000) do begin
+      for i:= 0 to CharList.Count-1 do begin
+        Ch:= CharList(i);
+        Have:= false;
+        for j:= 0 to Length(ZergLists)-1 do
+          for k:= 0 to Length(ZergLists[j])-1 do
+            if (ZergLists[j, k] = Ch.name) then begin
+              Have:= true;
+              Break;
+            end;
+        if (Have) or (User.DistTo(Ch) > Range) then continue;
+          
+        for j:= 0 to Length(ZergLists)-1 do
+          if (Ch.Clan = ClansNames[j]) then begin
+            SetLength(ZergLists[j], Length(ZergLists[j]) + 1);
+            ZergLists[j, Length(ZergLists[j]) - 1]:= Ch.name;
+          end;
+      end;
+      
+      Print('-------------------------------------------------------');
+      SL.Clear;
+      for i:= 0 to Length(ZergLists)-1 do begin
+        Print(ClansNames[i] + ': ' + IntToStr(Length(ZergLists[i])));
+        SL.Add('----- ' + ClansNames[i] + ' (' + IntToStr(Length(ZergLists[i])) + ') -----');
+        for j:= 0 to Length(ZergLists[i])-1 do begin
+          if CharList.ByName(ZergLists[i, j], Ch) then
+            SL.Add(ZergLists[i, j] + ' (' + GetL2ClassInfo(Ch.ClassID, 1) + ')')
+          else
+            SL.Add(ZergLists[i, j]);
+        end;
+        SL.Add('');
+      end;
+      SL.SaveToFile(Script.Path + User.Name + '_ZergList.txt');
+    end;
+  finally
+    SL.Free;
+  end;
+end;
+
+begin
+  Script.NewThread(@ZergCounterThread);
+  // code ...
+
+  Delay(-1);
+end.

@@ -1,0 +1,1191 @@
+{
+    "discord": {
+        "token": "PUT_YOUR_DISCORD_TOKEN_HERE_OR_USE_ENV_CONFIG",
+        "notificationChannel": "PUT_YOUR_DISCORD_NOTIFICATION_CHANNEL_ID_HERE",
+        "allNotificationType": "NOTIFICATION_TYPE",
+        "windowChannel": "PUT_YOUR_DISCORD_WINDOW_CHANNEL_HERE"
+    },
+    "bossUpdate": {
+        "path": "PUT_YOUR_BIN_SOURCE"
+    },
+    "timeZone": "Europe/Warsaw",
+    "bossConfig": [
+        {
+            "type": "ENTRY",
+            "id": 29006,
+            "name": "Core",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "range",
+                            "value": [
+                                20,
+                                24
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 29001,
+            "name": "Queen Ant",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "range",
+                            "value": [
+                                21,
+                                23
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 29014,
+            "name": "Orfen",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "range",
+                            "value": [
+                                18,
+                                26
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 29022,
+            "name": "Zaken",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "range",
+                            "value": [
+                                16,
+                                28
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 29020,
+            "name": "Baium",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "fixed-time",
+                            "value": [
+                                15,
+                                21
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25932,
+            "name": "Katuba",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25283,
+            "name": "Lilith",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "fixed-week-day",
+                            "value": [
+                                [
+                                    1,
+                                    19,
+                                    0
+                                ],
+                                [
+                                    4,
+                                    19,
+                                    0
+                                ]
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25286,
+            "name": "Anakim",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "single",
+                        "spawn": {
+                            "type": "fixed-week-day",
+                            "value": [
+                                [
+                                    2,
+                                    19,
+                                    0
+                                ],
+                                [
+                                    5,
+                                    19,
+                                    0
+                                ]
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "all"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25444,
+            "name": "Enmity Ghost Ramdal",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI",
+                        "spawn": {
+                            "type": "fixed-time",
+                            "value": [
+                                0,
+                                3,
+                                6,
+                                9,
+                                12,
+                                15,
+                                18,
+                                21,
+                                24
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25220,
+            "name": "Death Lord Hallate",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25447,
+            "name": "Immortal Savior Mardil",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25092,
+            "name": "Korim",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25054,
+            "name": "Kernon",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25126,
+            "name": "Longhorn Golkonda",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25143,
+            "name": "Fire of Wrath Shuriel",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25450,
+            "name": "Cherub Galaxia",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "TOI"
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25742,
+            "name": "Priest of Core Decar",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "Priests",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25738,
+            "name": "Queen Ant Drone Priest",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "Priests",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25743,
+            "name": "Orfen's Priest Lord Ipos",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "Priests",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25739,
+            "name": "Angel Priest of Baium",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "Priests",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25766,
+            "name": "Monster Minotaur",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25767,
+            "name": "Monster Bulleroth",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25773,
+            "name": "Evil Orc Tabris",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25775,
+            "name": "Evil Orc Dephracor",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25478,
+            "name": "Shillien's Priest Hisilrome",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25252,
+            "name": "Palibati Queen Themis",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25241,
+            "name": "Hero Tamash",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25366,
+            "name": "Kuroboros' High Priest",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "80-85",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25125,
+            "name": "Tiger King Kata",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25158,
+            "name": "King Tarlk",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25173,
+            "name": "Tiger King Karu",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25755,
+            "name": "Flame Salamander",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25385,
+            "name": "Evil Spirit Tempest",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25756,
+            "name": "Fire Dre Vanul",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25758,
+            "name": "Fiend Goblier",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25759,
+            "name": "Fiend Cherkia",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25760,
+            "name": "Fiend Harthemon",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25761,
+            "name": "Fiend Sarboth",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25762,
+            "name": "Demon Bedukel",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25763,
+            "name": "Bloody Witch Rumilla",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25260,
+            "name": "Iron Giant Totem",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "AB - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25781,
+            "name": "Varmoni",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "FOM - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25780,
+            "name": "Varbasion",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "FOM - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25783,
+            "name": "Bathus Elbogen",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "FOM - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25782,
+            "name": "Overlord Muscel",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "FOM - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ENTRY",
+            "id": 25784,
+            "name": "Daumen Kshana",
+            "widgets": [
+                {
+                    "type": "window",
+                    "properties": {
+                        "display": "group",
+                        "name": "FOM - 75",
+                        "spawn": {
+                            "type": "fixed-range",
+                            "value": [
+                                22
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "notify",
+                    "properties": {
+                        "mention": "non"
+                    }
+                }
+            ]
+        }
+    ]
+}
